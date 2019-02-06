@@ -23,25 +23,36 @@
 </header>
 <main class="container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section class="filters">
+    <form class="filters" method="post" action="">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <h3>Сетка:</h3>
-        <ul class="filters-grid">
-            <li>Адаптивная</li>
-            <li>Фиксированная</li>
-            <li>Адаптивная</li>
-            <li>Резиновая</li>
-        </ul>
-        <h3>Особенности:</h3>
-        <ul class="filters-features">
-            <li>Слайдер</li>
-            <li>Блок преимуществ</li>
-            <li>Новости</li>
-            <li>Галерея</li>
-            <li>Корзина</li>
-        </ul>
-        <p class="filters-show">Показать</p>
-    </section>
+        <fieldset>
+            <legend>Сетка:</legend>
+            <ul class="filters-grid">
+                <li><input type="radio" name="grid-group" value="adaptive" id="filters-adaptive" checked>
+                    <label for="filters-adaptive">Адаптивная</label></li>
+                <li><input type="radio" name="grid-group" value="fixed" id="filters-fixed">
+                    <label for="filters-fixed">Фиксированная</label></li>
+                <li><input type="radio" name="grid-group" value="fluid" id="filters-fluid">
+                    <label for="filters-fluid">Резиновая</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Особенности:</legend>
+            <ul class="filters-features">
+                <li><input checked id="filters-slider" name="slider" type="checkbox">
+                    <label for="filters-slider">Слайдер</label></li>
+                <li><input id="filters-advantages" name="advantages" type="checkbox">
+                    <label for="filters-advantages">Блок преимуществ</label></li>
+                <li><input checked id="filters-news" name="news" type="checkbox">
+                    <label for="filters-news">Новости</label></li>
+                <li><input id="filters-gallery" name="gallery" type="checkbox">
+                    <label for="filters-gallery">Галерея</label></li>
+                <li><input id="filters-cart" name="cart" type="checkbox">
+                    <label for="filters-cart">Корзина</label></li>
+            </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+    </form>
     <section class="catalog">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="catalog-list">
@@ -49,37 +60,67 @@
                 <a href="#">
                     <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
                 </a>
-                <div class="catalog-popup">
+                <div class="catalog-hover">
                     <h2 class="visually-hidden">Дополнительная информация</h2>
                     <h3><a href="#">Sedona</a></h3>
                     <p>Информационный сайт для туристов</p>
-                    <a class="button" href="#">Купить</a>
+                    <a href="#" class="button">9900 руб.</a>
                 </div>
             </li>
             <li>
                 <a href="#">
                     <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
                 </a>
+                <div class="catalog-hover">
+                    <h2 class="visually-hidden">Дополнительная информация</h2>
+                    <h3><a href="#">Pink App</a></h3>
+                    <p>Продуктовый лендинг  приложения для iOS и Android</p>
+                    <a href="#" class="button">9900 руб.</a>
+                </div>
             </li>
             <li>
                 <a href="#">
                     <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">
                 </a>
+                <div class="catalog-hover">
+                    <h2 class="visually-hidden">Дополнительная информация</h2>
+                    <h3><a href="#">Barbershop</a></h3>
+                    <p>Сайт салона красоты. Для мужчин, да.</p>
+                    <a href="#" class="button">9900 руб.</a>
+                </div>
             </li>
             <li>
                 <a href="#">
                     <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
                 </a>
+                <div class="catalog-hover">
+                    <h2 class="visually-hidden">Дополнительная информация</h2>
+                    <h3><a href="#">Mishka</a></h3>
+                    <p>Интернет-магазин вязаных игрушек.</p>
+                    <a href="#" class="button">9900 руб.</a>
+                </div>
             </li>
             <li>
                 <a href="#">
                     <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A+">
                 </a>
+                <div class="catalog-hover">
+                    <h2 class="visually-hidden">Дополнительная информация</h2>
+                    <h3><a href="#">A Plus</a></h3>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a href="#" class="button">9900 руб.</a>
+                </div>
             </li>
             <li>
                 <a href="#">
                     <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
                 </a>
+                <div class="catalog-hover">
+                    <h2 class="visually-hidden">Дополнительная информация</h2>
+                    <h3><a href="#">Кваст</a></h3>
+                    <p>Промо-сайт производителя  крафтового кваса</p>
+                    <a href="#" class="button">9900 руб.</a>
+                </div>
             </li>
         </ul>
     </section>
@@ -87,9 +128,9 @@
 <footer class="main-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social">
-        <li><a class="social-button" href="#">В контакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <span>Скидка 10% для друзей из социальных сетей.</span>

@@ -33,7 +33,7 @@
             </li>
             <li>
                 <h3>Приложения</h3>
-                <img src="img/applications.png" width="300" height="146" alt="Приложения" >
+                <img src="img/applications.png" width="300" height="146" alt="Приложения">
                 <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a href="#" class="button">Заказать</a>
             </li>
@@ -45,13 +45,31 @@
             </li>
         </ul>
     </section>
+    <section class="modal send-us">
+        <h2>Напишите нам</h2>
+        <form class="send-us-form" action="" method="post">
+            <label class="send-us-label" for="send-us-name">Ваше имя:</label>
+            <input class="send-us-input" id="send-us-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label class="send-us-label" for="send-us-email">Ваш e-mail:</label>
+            <input class="send-us-input" id="send-us-email" type="text" name="text" placeholder="email@example.com">
+            <label class="send-us-label" for="send-us-text">Текст письма:</label>
+            <textarea class="send-us-text" id="send-us-text" name="text" placeholder="В свободной форме"
+                      rows="5"></textarea>
+            <button class="button" type="submit">
+                Отправить
+            </button>
+        </form>
+        <button class="modal-close" type="button">
+            Закрыть
+        </button>
+    </section>
 </main>
 <footer class="main-footer">
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social">
-        <li><a class="social-button" href="#">В контакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <span>Скидка 10% для друзей из социальных сетей.</span>
