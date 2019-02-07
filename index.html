@@ -47,13 +47,14 @@
     </section>
     <section class="modal send-us">
         <h2>Напишите нам</h2>
-        <form class="send-us-form" action="" method="post">
+        <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="send-us-label" for="send-us-name">Ваше имя:</label>
-            <input class="send-us-input" id="send-us-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="send-us-input" id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
             <label class="send-us-label" for="send-us-email">Ваш e-mail:</label>
-            <input class="send-us-input" id="send-us-email" type="text" name="text" placeholder="email@example.com">
+            <input class="send-us-input" id="send-us-email" type="email" name="send-us-email"
+                   placeholder="email@example.com" required>
             <label class="send-us-label" for="send-us-text">Текст письма:</label>
-            <textarea class="send-us-text" id="send-us-text" name="text" placeholder="В свободной форме"
+            <textarea class="send-us-text" id="send-us-text" name="send-us-text" placeholder="В свободной форме"
                       rows="5"></textarea>
             <button class="button" type="submit">
                 Отправить
