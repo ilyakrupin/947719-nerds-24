@@ -1,0 +1,26 @@
+/* Подсветка сетки */
+
+body {
+    background-image: url('../img/nerds-index-grid.jpg');
+    background-size: 1440px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+body > * { /* 1-й уровень */
+    background-color: rgba(200, 20, 120, 0.3);
+}
+
+body > *  > * { /* 2-й уровень */
+    background-color: rgba(20, 200, 120, 0.3);
+}
+
+body > * > * > * { /* 3-й уровень */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-wrapper,
+.map-wrapper,
+.map-address {
+    opacity: 0.5;
+}
