@@ -70,9 +70,10 @@ img {
 
 .header-site-nav {
     flex-basis: 438px;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
 }
+
 
 /* ul: сбросить отступы и дефолтный стиль */
 .header-site-nav,
@@ -80,6 +81,10 @@ img {
     margin-top: 26px;
     padding: 0;
     list-style: none;
+}
+
+.header-site-nav li:not(:last-child) {
+    margin-right: 45px;
 }
 
 .header-user-nav {
