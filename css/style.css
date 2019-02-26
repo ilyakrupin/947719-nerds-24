@@ -54,11 +54,14 @@ img {
 }
 
 .header-container,
+.slider-container,
 .main-container,
 .map-container,
 .footer-social {
     width: 1160px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-logo {
@@ -68,6 +71,7 @@ img {
 .header-site-nav {
     flex-basis: 438px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* ul: сбросить отступы и дефолтный стиль */
@@ -104,14 +108,14 @@ img {
 
 .service-item {
     justify-content: space-between;
-
 }
 
 .service-item li {
     flex-basis: 300px;
 }
 
-.service-item > * > * {
+.service-item h3,
+.service-item p {
     margin: 0;
 }
 
@@ -124,6 +128,7 @@ img {
 }
 
 .service-item p {
+    width: 280px;
     padding-bottom: 32px;
 }
 
@@ -192,7 +197,6 @@ img {
 .slider-container {
     /* Временно для сетки */
     min-height: 413px;
-    flex-basis: 1160px;
     margin-top: 10px;
 }
 
@@ -383,9 +387,10 @@ img {
 }
 
 .filter-type li:last-child {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 40px;
+    margin-left: 16px;
+}
+
+.filter-type li:nth-last-child(2) {
     margin-left: auto;
 }
 
@@ -666,6 +671,10 @@ img {
     padding-bottom: 17px;
     color: #FFFFFF;
     background-color: #FB565A;
+}
+
+.send-us-popup-button {
+    width: 219px;
 }
 
 .send-us-form-button:hover,
