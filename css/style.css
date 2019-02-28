@@ -68,6 +68,15 @@ input[type="radio"].visually-hidden {
     margin-right: 202px;
 }
 
+.header-logo:hover,
+.header-logo:focus {
+    opacity: 0.8;
+}
+
+.header-logo:active {
+    opacity: 0.3;
+}
+
 .header-site-nav {
     flex-basis: 438px;
     justify-content: start;
@@ -656,6 +665,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-list li:hover::before {
     opacity: 1;
+}
+
+.catalog-list li:hover {
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .pagination-list {
