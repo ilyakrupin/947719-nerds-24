@@ -12,40 +12,36 @@ body {
     background-position: center top;
 }
 
-body > * { /* 1-й уровень */
+/*body > * { !* 1-й уровень *!
     outline-style: solid;
     outline-width: thin;
     outline-color: yellow;
 }
 
-body > *  > * { /* 2-й уровень */
+body > *  > * { !* 2-й уровень *!
     outline-style: dotted;
     outline-width: thin;
     outline-color: blue;
 }
 
-body > * > * > * { /* 3-й уровень */
+body > * > * > * { !* 3-й уровень *!
     outline-style: solid;
     outline-width: thin;
     outline-color: red;
 }
 
-body > * > * > * > * { /* 4-й уровень */
+body > * > * > * > * { !* 4-й уровень *!
     outline-style: dotted;
     outline-width: thin;
     outline-color: green;
 }
 
-body > * > * > * > * > * { /* 5-й уровень */
+body > * > * > * > * > * { !* 5-й уровень *!
     outline-style: solid;
     outline-width: thin;
     outline-color: purple;
-}
+}*/
 
-.header-wrapper,
-.map-wrapper,
-.map-address,
-.page-title,
-.catalog-list {
-    opacity: 0.5;
+body {
+    opacity: 0.4;
 }

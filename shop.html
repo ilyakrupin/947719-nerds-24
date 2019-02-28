@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+    <!--<link href="css/grid.css" rel="stylesheet">-->
 </head>
 <body>
 <header class="header-wrapper">
@@ -17,7 +17,7 @@
         <ul class="header-site-nav">
             <li><a href="about-us.html">Студия</a></li>
             <li><a href="our-clients.html">Клиенты</a></li>
-            <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+            <li class="header-site-nav-current"><a href="shop.html">Магазин</a></li>
             <li><a href="contact-us.html">Контакты</a></li>
         </ul>
         <ul class="header-user-nav">
@@ -47,38 +47,38 @@
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <div class="range-slider">
                 </div>
-                <fieldset>
+                <fieldset class="filter-grid-group">
                     <legend>Сетка:</legend>
                     <ul class="filter-grid">
-                        <li><input class="filter-input filter-input-radio" type="radio" name="grid-group"
+                        <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group"
                                    value="adaptive"
                                    id="filter-adaptive" checked>
                             <label for="filter-adaptive">Адаптивная</label></li>
-                        <li><input class="filter-input filter-input-radio" type="radio" name="grid-group" value="fixed"
+                        <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed"
                                    id="filter-fixed">
                             <label for="filter-fixed">Фиксированная</label></li>
-                        <li><input class="filter-input filter-input-radio" type="radio" name="grid-group" value="fluid"
+                        <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fluid"
                                    id="filter-fluid" disabled>
                             <label for="filter-fluid">Резиновая</label></li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-features-group">
                     <legend>Особенности:</legend>
                     <ul class="filter-features">
-                        <li><input class="filter-input filter-input-checkbox" id="filter-slider" name="slider"
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" name="slider"
                                    type="checkbox"
                                    checked>
                             <label for="filter-slider">Слайдер</label></li>
-                        <li><input class="filter-input filter-input-checkbox" id="filter-advantages" name="advantages"
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages" name="advantages"
                                    type="checkbox">
                             <label for="filter-advantages">Блок преимуществ</label></li>
-                        <li><input class="filter-input filter-input-checkbox" checked id="filter-news" name="news"
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" checked id="filter-news" name="news"
                                    type="checkbox">
                             <label for="filter-news">Новости</label></li>
-                        <li><input class="filter-input filter-input-checkbox" id="filter-gallery" name="gallery"
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" name="gallery"
                                    type="checkbox">
                             <label for="filter-gallery">Галерея</label></li>
-                        <li><input class="filter-input filter-input-checkbox" id="filter-cart" name="cart"
+                        <li><input class="visually-hidden filter-input filter-input-checkbox" id="filter-cart" name="cart"
                                    type="checkbox"
                                    disabled>
                             <label for="filter-cart">Корзина</label></li>
@@ -157,10 +157,10 @@
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item"><a href="#">1</a></li>
-                    <li class="pagination-item pagination-item-current"><a>2</a></li>
+                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">4</a></li>
+                    <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
                 </ul>
             </section>
         </div>
@@ -168,6 +168,7 @@
 </main>
 <footer class="footer">
     <div class="map-wrapper">
+        <img src="img/map.png" width="1440" height="416" alt="Расположение дизайн-студии на карте">
         <section class="map-container">
             <h2 class="visually-hidden">Контактная информация</h2>
             <div class="map-address">
@@ -183,9 +184,12 @@
     <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
+                <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте"></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+                <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фейсбук"></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
+                <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм"></a></li>
         </ul>
         <div class="footer-discount">
             <b>Давайте дружить, это выгодно!</b>

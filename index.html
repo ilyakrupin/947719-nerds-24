@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+    <!--<link href="css/grid.css" rel="stylesheet">-->
 </head>
 <body>
 <header class="header-wrapper">
@@ -61,14 +61,19 @@
         <section class="modal">
             <h2>Напишите нам</h2>
             <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
-                <label for="send-us-name">Ваше имя:</label>
-                <input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
-                <label for="send-us-email">Ваш e-mail:</label>
-                <input id="send-us-email" type="email" name="send-us-email"
-                       placeholder="email@example.com" required>
-                <label for="send-us-text">Текст письма:</label>
-                <textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме"
-                          rows="5"></textarea>
+                <p class="send-us-name">
+                    <label for="send-us-name">Ваше имя:</label>
+                    <input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
+                </p>
+                <p class="send-us-email">
+                    <label for="send-us-email">Ваш e-mail:</label>
+                    <input id="send-us-email" type="email" name="send-us-email"
+                           placeholder="email@example.com" required>
+                </p>
+                <p class="send-us-text">
+                    <label for="send-us-text">Текст письма:</label>
+                    <textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме" rows="5"></textarea>
+                </p>
                 <button type="submit" class="button send-us-form-button">Отправить</button>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
@@ -77,6 +82,7 @@
 </main>
 <footer class="footer">
     <div class="map-wrapper">
+        <img src="img/map.png" width="1440" height="416" alt="Расположение дизайн-студии на карте">
         <section class="map-container">
             <h2 class="visually-hidden">Контактная информация</h2>
             <div class="map-address">
@@ -85,16 +91,19 @@
                     191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8  
                     <p>тел. +7 (812) 275-75-75</p>
                 </address>
-                <a href="#" class="button send-us-form-button send-us-popup-button">Напишите нам</a>
+                <button type="submit" class="button send-us-form-button">Напишите нам</button>
             </div>
         </section>
     </div>
     <div class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
+                <img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте"></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+                <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фейсбук"></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
+                <img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм"></a></li>
         </ul>
         <div class="footer-discount">
             <b>Давайте дружить, это выгодно!</b>
