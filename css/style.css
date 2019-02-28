@@ -294,13 +294,54 @@ input[type="radio"].visually-hidden {
 }
 
 .main-brands {
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-bottom: 80px;
-    /* Временно для сетки */
-    min-height: 176px;
     border-top: 2px solid #979797;
     border-bottom: 2px solid #979797;
-
 }
+
+.main-brands ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-brands li {
+    width: 298px;
+}
+
+.main-brands li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.main-brands li:not(:last-child):after {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    content: "";
+    width: 2px;
+    height: 52px;
+    background: #979797;
+}
+
+.main-brands a {
+    opacity: 0.2;
+}
+
+.main-brands a:hover,
+.main-brands a:focus {
+    opacity: 1;
+}
+
+.main-brands a:active {
+    opacity: 0.2;
+}
+
 
 .map-wrapper {
     /*    min-height: 419px;
@@ -831,6 +872,7 @@ input[type="radio"].visually-hidden {
 /* Modal-form */
 
 .modal {
+    display: none;
     box-sizing: border-box;
     position: fixed;
     bottom: 180px;
