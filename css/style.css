@@ -738,6 +738,10 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
+.catalog-list li:hover .catalog-popup {
+    visibility: visible;
+}
+
 .pagination-list {
     flex-basis: 760px;
     display: flex;
@@ -810,6 +814,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-popup {
+    visibility: hidden;
     position: absolute;
     bottom: 0;
     width: 360px;
