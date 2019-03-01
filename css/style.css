@@ -162,10 +162,10 @@ input[type="radio"].visually-hidden {
 
 .header-site-nav a,
 .header-user-nav a {
-    display: block;
+    display: inline-block;
     padding-top: 0;
     padding-bottom: 4px;
-    vertical-align: middle;
+    vertical-align: top;
     color: #000000;
 }
 
@@ -177,12 +177,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-site-nav a:active {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid #FB565A;
 }
 
 .header-user-nav a:active {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .header-site-nav,
@@ -191,6 +191,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-site-nav-current a {
+    color: #000000;
     border-bottom: 2px solid #FB565A;
 }
 
@@ -214,7 +215,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* index.html */
-
 
 .slider-container {
     /* Временно для сетки */
@@ -372,11 +372,6 @@ input[type="radio"].visually-hidden {
 }
 
 .map-wrapper {
-    /*    min-height: 419px;
-        background-image: url("../img/map.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;*/
     display: flex;
     justify-content: center;
 }
@@ -387,8 +382,9 @@ input[type="radio"].visually-hidden {
 }
 
 .map-wrapper img {
+    width: 100%;
     height: 416px;
-    min-width: 1440px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -755,6 +751,7 @@ input[type="radio"].visually-hidden {
     padding: 17px 21px;
     color: #000000;
     background-color: #eeeeee;
+    border-radius: 3px;
 }
 
 .pagination-item a:hover,
@@ -787,11 +784,15 @@ input[type="radio"].visually-hidden {
     background-color: #d5d5d5;
 }
 
-
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
     padding: 14px 18px;
-    background-color: #ffffff;
     border: 3px solid #dbdbdb;
+    box-shadow: none;
+    background-color: #ffffff;
+    cursor: default;
 }
 
 .catalog-popup-caption a {
@@ -983,6 +984,7 @@ input[type="radio"].visually-hidden {
     outline: none;
     background-image: url("../img/close-cross.svg");
     opacity: 0.3;
+    background-color: transparent;
 }
 
 .modal-close:hover,
@@ -990,9 +992,8 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
-.modal-close:active,
 .modal-close:active {
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 
