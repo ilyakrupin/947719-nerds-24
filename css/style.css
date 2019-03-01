@@ -38,7 +38,8 @@ input[type="radio"].visually-hidden {
 /* Старт: сеточные стили */
 
 .header-wrapper,
-.map-wrapper {
+.map-wrapper,
+.page-wrapper {
     width: 100%;
 }
 
@@ -54,6 +55,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-container,
+.page-title,
 .slider-container,
 .main-container,
 .map-container,
@@ -428,14 +430,14 @@ input[type="radio"].visually-hidden {
 
 /* Старт: сеточные стили */
 
-.page-title {
-    margin: 0;
-    padding-top: 72px;
-    padding-right: 0;
-    padding-bottom: 111px;
-    padding-left: 0;
-    text-align: center;
+.page-wrapper {
     background-color: #EEEEEE;
+}
+
+.page-title {
+    padding-top: 72px;
+    padding-bottom: 111px;
+    text-align: center;
 }
 
 .filter-heading,
