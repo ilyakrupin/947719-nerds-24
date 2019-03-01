@@ -180,7 +180,6 @@ input[type="radio"].visually-hidden {
 
 .header-site-nav a:active {
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #FB565A;
 }
 
 .header-user-nav a:active {
@@ -1328,9 +1327,9 @@ input[type="radio"].visually-hidden {
     padding-bottom: 7px;
 }
 
-.cart:active {
+/*.cart:active {
     border-bottom: 2px solid #FB565A;
-}
+}*/
 
 .send-us-form {
     display: flex;
