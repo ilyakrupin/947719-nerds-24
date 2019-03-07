@@ -1085,10 +1085,6 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
-.catalog-list li:hover .catalog-popup {
-    visibility: visible;
-}
-
 .pagination-list {
     flex-basis: 760px;
     display: flex;
@@ -1168,6 +1164,7 @@ input[type="radio"].visually-hidden {
     z-index: 100;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 45px;
@@ -1177,9 +1174,12 @@ input[type="radio"].visually-hidden {
     background-color: #EEEEEE;
 }
 
+.catalog-list li:hover .catalog-popup {
+    visibility: visible;
+}
+
 .catalog-popup p {
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 240px;
     margin-bottom: 30px;
 }
 
