@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden {
 .map-wrapper,
 .page-wrapper {
     width: 100%;
+    min-width: 1200px;
 }
 
 .header-wrapper {
@@ -107,6 +108,7 @@ input[type="radio"].visually-hidden {
 .service-item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .service {
@@ -439,7 +441,7 @@ input[type="radio"].visually-hidden {
 
 .main-offer {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .offer-description {
@@ -472,7 +474,7 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-description ul {
-    margin: 2px;
+    margin: 3px;
     padding: 0;
     list-style: none;
 }
@@ -495,14 +497,14 @@ input[type="radio"].visually-hidden {
 }
 
 .offer-facts {
-    flex-basis: 360px;
+    flex-basis: 365px;
     background-image: url("../img/img-facts.png");
     background-repeat: no-repeat;
-    background-position: 50% 40px;
+    background-position: 50% 37px;
 }
 
 .offer-facts {
-    padding-top: 280px;
+    padding-top: 282px;
 }
 
 .offer-facts p {
@@ -516,34 +518,41 @@ input[type="radio"].visually-hidden {
 .offer-facts ul {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 11px;
     padding: 0;
     list-style: none;
     color: #283136;
 }
 
+.offer-facts li {
+    margin-top: 43px;
+    font-weight: 400;
+}
+
+.offer-facts li:last-child {
+    position: relative;
+    right: -3px;
+}
+
 .offer-facts span {
-    display: inline-flex;
-    margin-bottom: 35px;
+    display: inline-block;
+    margin-bottom: 34px;
     font-size: 45px;
     font-weight: 700;
+    vertical-align: top;
     color: #000000;
 }
 
-.offer-facts span::after {
-    content: "%";
-    font-size: 26px;
-    line-height: 0;
-}
-
-.offer-facts li {
-    margin-top: 45px;
-
+.offer-facts sup {
+    position: relative;
+    top: -16px;
+    font-size: 24px;
+    vertical-align: bottom;
 }
 
 .main-brands {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     margin-bottom: 80px;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
@@ -883,7 +892,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-features-group {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .filter-grid-group,
@@ -1010,7 +1019,6 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 
-
 .filter-input:hover + label,
 .filter-input:focus + label {
     color: #283136;
@@ -1018,6 +1026,13 @@ input[type="radio"].visually-hidden {
 
 .filter-input:disabled + label {
     opacity: 0.3;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-radio:checked:focus + label::before,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:checked:focus + label::before {
+    opacity: 1;
 }
 
 .filter-button {
@@ -1204,6 +1219,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social ul {
     display: flex;
+    flex-wrap: wrap;
     width: 399px;
     margin: 0;
     padding: 0;
@@ -1273,7 +1289,7 @@ input[type="radio"].visually-hidden {
 
 .footer-discount b {
     display: block;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 36px;
@@ -1289,7 +1305,7 @@ input[type="radio"].visually-hidden {
 /* Modal-form */
 
 .modal {
-    /*display: none;*/
+    display: none;
     box-sizing: border-box;
     position: fixed;
     bottom: 180px;
