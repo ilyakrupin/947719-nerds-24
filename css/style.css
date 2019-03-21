@@ -629,20 +629,32 @@ input[type="radio"].visually-hidden {
 }
 
 .map-wrapper {
+    position: relative;
     display: flex;
+    height: 416px;
     justify-content: center;
-}
-
-.map-container {
-    position: absolute;
-    z-index: 1;
+    background-color: #b5b5b5;
 }
 
 .map-wrapper img {
+    position: absolute;
+    z-index: 10;
     width: 100%;
     height: 416px;
     min-width: 1200px;
     margin: 0 auto;
+}
+
+.map-wrapper iframe {
+    z-index: 20;
+    width: 100%;
+    min-width: 1200px;
+    border: none;
+}
+
+.map-container {
+    position: absolute;
+    z-index: 30;
 }
 
 .map-address {
