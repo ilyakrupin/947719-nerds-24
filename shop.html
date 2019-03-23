@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/style.min.css" rel="stylesheet">-->
     <!--<link href="css/grid.css" rel="stylesheet">-->
 </head>
 <body>
@@ -181,6 +182,26 @@
                 </ul>
             </section>
         </div>
+        <section class="modal">
+            <h2>Напишите нам</h2>
+            <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="send-us-name">
+                    <label for="send-us-name">Ваше имя:</label>
+                    <input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
+                </p>
+                <p class="send-us-email">
+                    <label for="send-us-email">Ваш e-mail:</label>
+                    <input id="send-us-email" type="email" name="send-us-email"
+                           placeholder="email@example.com" required>
+                </p>
+                <p class="send-us-text">
+                    <label for="send-us-text">Текст письма:</label>
+                    <textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме" rows="5"></textarea>
+                </p>
+                <button type="submit" class="button send-us-form-button">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
     </div>
 </main>
 <footer class="footer">

@@ -1,10 +1,12 @@
 var modal = document.querySelector(".modal");
-var open = document.querySelector(".send-us-popup-button");
-var close = document.querySelector(".modal-close");
+var popup = document.querySelector(".send-us-popup-button");
+var close = modal.querySelector(".modal-close");
+var myName = modal.querySelector("[name=send-us-name]");
 
-open.addEventListener("click", function (evt) {
+popup.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.add("modal-show");
+    myName.focus();
 });
 
 close.addEventListener("click", function (evt) {
