@@ -18,8 +18,6 @@ popup.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.add("modal-show");
 
-    console.log(storage);
-
     if (storage) {
         formName.value = storage;
         formEmail.focus();
