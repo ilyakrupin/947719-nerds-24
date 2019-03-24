@@ -715,11 +715,21 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-heading,
-.filter-type,
+.filter-by-type,
+.filter-by-order,
 .catalog-columns,
 .catalog,
 .catalog-list {
     display: flex;
+}
+
+.filter-by-type {
+    justify-content: space-between;
+}
+
+.filter-by-order {
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 .catalog {
@@ -768,26 +778,21 @@ a.filter-type-current {
 }
 
 .filter-heading ul {
-    flex-basis: 360px;
     margin: 0;
     list-style: none;
 }
 
-.filter-type li {
+.filter-by-type li {
     font-size: 14px;
     font-weight: 400;
 }
 
-.filter-type li:not(:first-child):not(:last-child) {
+.filter-by-type li:not(:first-child) {
     padding-left: 25px;
 }
 
-.filter-type li:last-child {
-    margin-left: 16px;
-}
-
-.filter-type li:nth-last-child(2) {
-    margin-left: auto;
+.filter-by-order li:last-child {
+    padding-left:12px;
 }
 
 .catalog .catalog-list {
