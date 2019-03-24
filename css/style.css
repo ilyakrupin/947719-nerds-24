@@ -23,7 +23,6 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -85,7 +84,6 @@ input[type="radio"].visually-hidden {
     justify-content: start;
     flex-wrap: wrap;
 }
-
 
 /* ul: сбросить отступы и дефолтный стиль */
 .header-site-nav,
@@ -231,10 +229,8 @@ input[type="radio"].visually-hidden {
     left: 50%;
     bottom: 104px;
     z-index: 100;
-
     width: 160px;
     height: 18px;
-
     text-align: center;
     font-size: 0;
     transform: translateX(-50%);
@@ -266,7 +262,6 @@ input[type="radio"].visually-hidden {
 .slider-list {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -560,6 +555,7 @@ input[type="radio"].visually-hidden {
 
 .main-brands ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -732,7 +728,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-heading {
-    padding-top: 59px;
+    padding-top: 58px;
     padding-bottom: 55px;
     text-transform: uppercase;
 }
@@ -746,8 +742,11 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.filter-heading a:active,
-.filter-type-current a:active {
+.filter-heading a:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+a.filter-type-current {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -755,7 +754,13 @@ input[type="radio"].visually-hidden {
     flex-basis: 360px;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 18px;
     font-weight: 700;
+    line-height: 18px;
+}
+
+.filter-heading h3:first-of-type {
+    line-height: 30px;
 }
 
 .filter-heading h3:last-of-type {
@@ -857,7 +862,7 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle {
     position: absolute;
-    top: 31px;
+    top: 30px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -885,6 +890,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
     font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -892,8 +898,9 @@ input[type="radio"].visually-hidden {
     width: 60px;
     padding: 8px 10px;
     margin-left: 10px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
+    line-height: 22px;
     text-align: center;
     color: #283136;
     border: none;
@@ -969,11 +976,9 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: -35px;
     top: 0;
-
     width: 25px;
     height: 25px;
     border-radius: 50%;
-
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1007,7 +1012,6 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: -35px;
     top: 0;
-
     width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
@@ -1113,21 +1117,27 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.pagination-item a {
+.pagination-item a,
+.pagination-item a:link,
+.pagination-item a:visited {
     display: block;
     padding: 17px 21px;
     color: #000000;
     background-color: #eeeeee;
+    box-shadow: none;
     border-radius: 3px;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus {
+    color: rgba(0, 0, 0, 1);
     background-color: #dfdfdf;
+    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item a:active {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
 }
 
@@ -1168,6 +1178,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-popup-caption {
     margin: 0;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 30px;
@@ -1175,7 +1186,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-popup {
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     bottom: 0;
     width: 360px;
@@ -1191,8 +1202,12 @@ input[type="radio"].visually-hidden {
     color: #666666;
     background-color: #EEEEEE;
 }
+.catalog-template {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-.catalog-list li:hover .catalog-popup {
+.catalog-template:hover .catalog-popup {
     visibility: visible;
 }
 
@@ -1536,6 +1551,7 @@ input[type="radio"].visually-hidden {
 .send-us-email label,
 .send-us-text label {
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .send-us-text {
