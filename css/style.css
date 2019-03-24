@@ -740,7 +740,7 @@ input[type="radio"].visually-hidden {
 
 .filter-heading {
     padding-top: 53px;
-    padding-bottom: 55px;
+    padding-bottom: 49px;
     text-transform: uppercase;
 }
 
@@ -775,11 +775,13 @@ a.filter-type-current {
 }
 
 .filter-heading h3:last-of-type {
+    padding-top: 3px;
     margin-right: 266px;
 }
 
 .filter-heading ul {
     margin: 0;
+    padding-top: 5px;
     padding-left: 0;
     list-style: none;
 }
