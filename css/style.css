@@ -724,7 +724,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-by-type {
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .filter-by-order {
@@ -738,7 +739,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-heading {
-    padding-top: 58px;
+    padding-top: 53px;
     padding-bottom: 55px;
     text-transform: uppercase;
 }
@@ -761,7 +762,6 @@ a.filter-type-current {
 }
 
 .filter-heading h3 {
-    flex-basis: 360px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px;
@@ -770,15 +770,17 @@ a.filter-type-current {
 }
 
 .filter-heading h3:first-of-type {
+    margin-right: 285px;
     line-height: 30px;
 }
 
 .filter-heading h3:last-of-type {
-    margin-left: 40px;
+    margin-right: 266px;
 }
 
 .filter-heading ul {
     margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -787,8 +789,8 @@ a.filter-type-current {
     font-weight: 400;
 }
 
-.filter-by-type li:not(:first-child) {
-    padding-left: 25px;
+.filter-by-type li {
+    padding-right: 26px;
 }
 
 .filter-by-order li:last-child {
