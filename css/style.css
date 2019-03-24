@@ -207,8 +207,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-popup-button {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 200px;
     display: block;
     color: #FFFFFF;
@@ -736,11 +736,12 @@ input[type="radio"].visually-hidden {
 .catalog {
     flex-wrap: wrap;
     margin-bottom: 5px;
+    padding-left: 140px;
 }
 
 .filter-heading {
     padding-top: 53px;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
     text-transform: uppercase;
 }
 
@@ -803,10 +804,6 @@ a.filter-type-current {
     justify-content: flex-end;
 }
 
-.catalog {
-    padding-left: 140px;
-}
-
 .catalog-list {
     margin: 0;
     padding: 0;
@@ -834,7 +831,7 @@ a.filter-type-current {
 /* Старт: сложный фильтр */
 
 .range-slider {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
 }
 
 .filter-item {
@@ -850,7 +847,7 @@ a.filter-type-current {
 .range-controls {
     position: relative;
     height: 41px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
@@ -906,7 +903,7 @@ a.filter-type-current {
 .price-controls input {
     width: 60px;
     padding: 8px 10px;
-    margin-left: 10px;
+    margin-left: 9px;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -922,11 +919,11 @@ a.filter-type-current {
 /* Фильтр */
 
 .filter-grid-group {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .filter-features-group {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .filter-grid-group,
@@ -935,6 +932,9 @@ a.filter-type-current {
     border: none;
 }
 
+.filter fieldset {
+    margin-left: 0;
+}
 
 .filter legend {
     font-size: 18px;
@@ -971,8 +971,8 @@ a.filter-type-current {
 }
 
 .filter li {
-    margin-bottom: 19px;
-    padding-left: 34px;
+    margin-bottom: 20px;
+    padding-left: 36px;
 }
 
 .filter-input + label,
@@ -1086,13 +1086,10 @@ a.filter-type-current {
 }
 
 .catalog-list li {
+    position: relative;
     flex-basis: 360px;
     margin-bottom: 30px;
-}
-
-.catalog-list li {
-    position: relative;
-    padding-top: 40px;
+    padding-top: 39px;
 }
 
 .catalog-list li::before {
@@ -1186,7 +1183,8 @@ a.filter-type-current {
 }
 
 .catalog-popup-caption {
-    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 15px;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1204,8 +1202,6 @@ a.filter-type-current {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 45px;
     font-weight: 400;
     text-align: center;
     color: #666666;
@@ -1213,7 +1209,10 @@ a.filter-type-current {
 }
 .catalog-template {
     overflow: hidden;
-    text-overflow: ellipsis;
+}
+
+.catalog-template a {
+    border: 1px solid green;
 }
 
 .catalog-template:hover .catalog-popup {
@@ -1221,14 +1220,14 @@ a.filter-type-current {
 }
 
 .catalog-popup p {
-    width: 240px;
-    margin-bottom: 30px;
+    width: 250px;
+    margin: 0;
 }
 
 .catalog-popup-button {
-    width: 200px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    width: 195px;
+    margin-top: 33px;
+    margin-bottom: 45px;
     color: #FFFFFF;
     background-color: #FB565A;
 }
