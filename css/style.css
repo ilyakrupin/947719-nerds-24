@@ -711,6 +711,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-address address {
+    padding-right: 10px;
     font-weight: 400;
     font-style: normal;
     color: #666666;
